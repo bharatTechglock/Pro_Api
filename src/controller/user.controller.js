@@ -1,4 +1,4 @@
-const { user, Sequelize } = require("../models");
+const { user, Sequelize } = require('../models');
 const Op = Sequelize.Op;
 const bcrypt = require('bcrypt');
 const { check, validationResult } = require('express-validator');

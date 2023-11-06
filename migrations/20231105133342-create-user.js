@@ -42,11 +42,16 @@ module.exports = {
         allowNull: true
       },
       otp: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true
       },
       otp_retry: {
         type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 0
+      },
+      expiry_time: {
+        type: DataTypes.DATE,
         allowNull: true
       },
       company_name: {

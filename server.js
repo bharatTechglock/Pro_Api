@@ -14,7 +14,7 @@ res.json({ message: "Welcome to pro construction's application." });
 });
 
 //User route 
-const users = require('./router/user.routes');
+const users = require('./src/router/user.routes');
 app.use('/api/users', users);
 
 app.listen(PORT, () => {

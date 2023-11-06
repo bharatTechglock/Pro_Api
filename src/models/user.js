@@ -20,8 +20,9 @@ module.exports = (sequelize, DataTypes) => {
     user_type: DataTypes.INTEGER,
     status: DataTypes.INTEGER,
     category_id: DataTypes.INTEGER,
-    otp: DataTypes.INTEGER,
+    otp: DataTypes.STRING,
     otp_retry: DataTypes.INTEGER,
+    expiry_time: DataTypes.DATE,
     company_name: DataTypes.STRING,
     address: DataTypes.STRING,
     country: DataTypes.STRING,
@@ -29,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
     postal_code: DataTypes.INTEGER,
     created_by: DataTypes.INTEGER,
     updated_by: DataTypes.INTEGER,
+    deleted_at: DataTypes.DATE
   }, {
     sequelize,
     modelName: 'user',
